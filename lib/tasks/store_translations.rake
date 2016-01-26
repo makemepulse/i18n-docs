@@ -22,6 +22,8 @@ namespace :i18n do
     translations.store_translations
     translations.clean_up
 
+    I18n.backend.reload!
+
   end
 
   desc "Export all language files to CSV files (only files contained in en folder are considered)"
